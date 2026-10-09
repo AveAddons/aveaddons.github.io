@@ -1,27 +1,19 @@
-# AveAddons · World of Warcraft Forever
+# AveAddons – Website v2
 
-Statische, responsive Addon-Website für GitHub Pages. Keine Build-Tools erforderlich.
+Website für World of Warcraft Forever. Statisches Hosting über GitHub Pages.
 
-## Schnellstart
+## Upload auf GitHub (wichtig)
 
-1. GitHub-Organisation `AveAddons` anlegen (falls verfügbar).
-2. Repository `AveAddons.github.io` anlegen und den **Inhalt dieses Ordners** in dessen Hauptverzeichnis hochladen.
-3. Repository `addons` unter derselben Organisation anlegen und **öffentlich** stellen.
-4. In `config.js` `githubOwner`, `addonsRepo` und optional `discordUrl` anpassen.
-5. In den Einstellungen des Website-Repositories unter **Pages → Build and deployment → Deploy from a branch** den Branch `main` und `/ (root)` auswählen.
-6. Die Website ist nach der Bereitstellung unter `https://aveaddons.github.io` erreichbar, falls der Organisationsname `AveAddons` ist.
+Alle Dateien **aus dem ZIP direkt in das Hauptverzeichnis** von `AveAddons/aveaddons.github.io` hochladen (nicht den übergeordneten Ordner). Vorhandene Dateien überschreiben. Die Ordnerstruktur `assets/aveaddons-logo.png` muss erhalten bleiben.
 
-## Addons automatisch veröffentlichen
+Benötigte Dateien: `index.html`, `docs.html`, `styles.css`, `app.js`, `config.js`, `README.md`, `assets/aveaddons-logo.png`.
 
-Im `addons`-Repository unter **Releases → Draft a new release** ein Release mit Tag `BagBrother-v1.0.0` erstellen und eine ZIP-Datei `BagBrother-v1.0.0.zip` als Asset anhängen. Der Beschreibungstext des Releases erscheint in der Addon-Karte. Für jedes Addon zeigt die Website das neueste veröffentlichte, nicht als Prerelease markierte Release an. Die GitHub API ist öffentlich, aber hat ohne Authentifizierung Rate Limits; nach Veröffentlichung kann die Anzeige verzögert sein. Die Website zeigt nur die ersten 100 Releases des Repositories an.
+## Automatische Addons
 
-**Wichtig:** Die Demo-Karten sind Platzhalter und bieten keine echten Downloads. Logo-Grafik ist unter `assets/aveaddons-logo.png` abgelegt und kann bei Bedarf eingebunden werden. Die aktuelle Kopfzeile verwendet ein leichtgewichtiges typografisches A-Signet.
+In `config.js` stehen Organisation `AveAddons` und Repository `addons`. Erst ein **öffentliches** Repository `AveAddons/addons` anlegen. Danach für jedes Addon ein GitHub Release mit Tag `AddonName-v1.2.3` erstellen und eine ZIP-Datei als Release Asset anhängen. Die Website liest Releases beim Aufruf über die öffentliche GitHub-API. Ohne Releases werden Demo-Karten angezeigt.
 
-## Struktur
+Discord-Link in `config.js` ergänzen.
 
-- `index.html`: Startseite und Addon-Katalog
-- `styles.css`: responsives Dark/Gold-Design
-- `app.js`: Releases laden, suchen und anzeigen
-- `config.js`: GitHub-/Discord-Konfiguration
-- `docs.html`: Installationsanleitung
-- `assets/aveaddons-logo.png`: ausgewähltes AveAddons-Logo
+## Hinweis
+
+Dies ist eine eigenständige Community-Seite, kein offizielles Blizzard-Angebot. Alle Beispieldaten sind Platzhalter.
