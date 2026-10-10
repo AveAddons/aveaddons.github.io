@@ -39,3 +39,22 @@ object-fit: cover;
 z-index: 1;
 }
 </CodeBlock>
+/* Chronicle-Vorschaubild */
+.card-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-letter {
+  position: relative;
+  z-index: 0;
+}
+
+.addon-cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
