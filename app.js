@@ -48,6 +48,7 @@ const demo = [
 ];
 
 // Addon-Karten anzeigen
+
 function render() {
   const q = search.value.trim().toLowerCase();
 
@@ -59,14 +60,12 @@ function render() {
     const image = getAddonImage(a.name);
 
     const cover = image
-      ? `<div class="card-cover">
-           <span class="cover-letter">${escapeHTML(a.name[0] || 'A')}</span>
+      ? `<div class="card-cover" style="position:relative;overflow:hidden;">
            <img
-             class="addon-cover-image"
              src="${escapeHTML(image)}"
              alt="${escapeHTML(a.name)} Vorschaubild"
              loading="lazy"
-             onerror="this.remove()"
+             style="display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;z-index:10;"
            >
          </div>`
       : `<div class="card-cover">
@@ -79,7 +78,6 @@ function render() {
 
         <div class="card-body">
           <h3>${escapeHTML(a.name)}</h3>
-
           <p>${escapeHTML(a.description)}</p>
 
           <div class="card-meta">
