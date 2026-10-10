@@ -19,7 +19,8 @@ const repo = `https://github.com/${encodeURIComponent(cfg.githubOwner)}/${encode
 
 // Vorschaubilder der Addons
 const addonImages = {
-  'chronicle': 'assets/addons/chronicle.png'
+  'chronicle': 'assets/addons/chronicle.png',
+  'foreverjourneyxp': 'assets/addons/foreverjourneyxp.png'
 };
 
 // Automatische Bildzuordnung
