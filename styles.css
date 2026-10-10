@@ -21,3 +21,21 @@ body{background:radial-gradient(ellipse at 80% 10%,#132037 0%,#070c14 55%)}
 @media(max-width:950px){.sidebar{transform:translateX(-105%);transition:transform .25s;width:min(300px,82vw);z-index:20}.sidebar.open{transform:translateX(0)}.nav-backdrop.visible{display:block;position:fixed;inset:0;background:#000a;z-index:19}main{margin-left:0}.menu{display:block;background:transparent;color:var(--gold);border:0;font-size:27px;padding:7px 12px 7px 0}.top-title{display:inline;font-size:11px}.topbar{gap:10px}.search{width:min(320px,52vw)}.hero{padding:55px 5%}.hero-art{opacity:.2}.cards,.features{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.top-title{display:none}.search{width:min(100%,340px);margin-left:auto}.hero{min-height:430px;padding:48px 6%}.hero-art{display:none}.hero p{font-size:14px}.section,.features{padding-left:6%;padding-right:6%}.cards,.features{grid-template-columns:1fr}.section-heading{align-items:flex-start;flex-direction:column}.badge{margin-bottom:15px}.benefits{gap:12px}footer{flex-wrap:wrap}h1{font-size:clamp(34px,9vw,48px)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+<CodeBlock language="css" editable>
+.card-cover {
+position: relative;
+overflow: hidden;
+}
+.cover-letter {
+position: relative;
+z-index: 0;
+}
+.addon-cover-image {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 1;
+}
+</CodeBlock>
