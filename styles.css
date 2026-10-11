@@ -77,3 +77,14 @@ body{background:#03111e;color:#f7f7f8;font-family:Georgia,"Times New Roman",seri
  .community{min-height:165px}
  .community h2{font-size:24px}
 }
+
+/* Final reference refinements */
+.hero{min-height:410px;background-position:center 49%}
+.hero-overlay{background:linear-gradient(90deg,transparent 0%,#03132145 29%,#031321bc 43%,#031321c4 53%,#0313219c 65%,transparent 82%),linear-gradient(0deg,#03111e 0%,transparent 18%)}
+.hero h1{background:linear-gradient(110deg,#fff4d7 10%,#ffe9b7 50%,#f0ae36 95%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 4px #0008)}
+.theme-toggle{border:0;background:transparent;color:var(--gold);font-size:26px;cursor:pointer;padding:2px 6px}.theme-toggle:hover{filter:brightness(1.3)}
+.card-image img{object-fit:cover}.card{transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#f8c566}
+.card-actions a{display:flex;align-items:center;justify-content:center;min-height:43px}.community{border-color:#c18a3b}
+body.light-mode{--muted:#c6d2de;filter:brightness(1.14)}
+@media(max-width:760px){.hero h1{white-space:normal}.hero{background-position:center}.navtools{gap:6px}.theme-toggle{font-size:21px}}
+@media(max-width:520px){.hero h1{font-size:clamp(31px,8.4vw,44px)}.search input{width:72px}.theme-toggle{padding:0 2px}.hero{min-height:430px}}
