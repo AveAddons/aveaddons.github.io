@@ -115,3 +115,35 @@ body.light-mode .header{background:#14283af7}
 }
 /* Goldener Stern ohne dunkelblaues Kästchen. */
 .highlights::after{background:transparent!important;box-shadow:none!important}
+
+/* AzerothForge: ruhiger, heller und kleinerer Schriftzug */
+.hero h1{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(36px,4.05vw,55px);
+  font-weight:600;
+  letter-spacing:-1.25px;
+  line-height:1.14;
+  background:linear-gradient(180deg,#fff9e9 0%,#ffe8b4 56%,#f3c86d 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:#ffe8b4;
+  filter:none;
+  text-shadow:none;
+}
+.hero h1 .gold{color:inherit;-webkit-text-fill-color:inherit}
+.header .brand{font-size:19px;font-weight:600;letter-spacing:.1px;font-variant:small-caps}
+.header .brand .gold{color:#f5cc77}
+.header .monogram{font-size:35px;text-shadow:none;filter:none}
+.footer .brand{font-size:17px;font-weight:600}
+.footer .monogram{font-size:32px;text-shadow:none}
+@media(max-width:760px){
+ .hero h1{font-size:clamp(30px,6.8vw,46px);letter-spacing:-.7px;white-space:normal}
+ .header .brand{font-size:17px}
+ .header .monogram{font-size:31px}
+}
+@media(max-width:520px){
+ .hero h1{font-size:clamp(28px,7.6vw,38px);letter-spacing:-.6px}
+ .header .brand{font-size:15px}
+ .header .monogram{font-size:29px}
+}
