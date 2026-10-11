@@ -27,3 +27,40 @@ body{background:#03111e;color:#f8f6f2;font-family:Georgia,'Times New Roman',seri
 @media(max-width:900px){.wrap{width:calc(100% - 38px)}.cards{gap:16px}.card-image{height:185px}.card-body{padding:15px}.card p{font-size:13px}.hero h1{font-size:clamp(36px,6vw,60px)}}
 @media(max-width:760px){.hero{min-height:420px}.hero-inner{padding:42px 0}.hero h1{font-size:clamp(33px,7.5vw,52px);white-space:normal}.hero-desc{font-size:13px}.highlights{grid-template-columns:repeat(2,minmax(0,1fr))}.highlight{justify-content:flex-start}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card-image{height:165px}.card h3{font-size:20px}.card-actions a{font-size:12px}}
 @media(max-width:560px){.wrap{width:calc(100% - 28px)}.hero h1{font-size:clamp(32px,8.4vw,45px)}.hero-sub{font-size:22px}.cards{grid-template-columns:1fr}.card-image{height:190px}.card h3{font-size:23px}.card p{font-size:14px}.card-actions a{font-size:14px}.hi-icon{font-size:27px}.highlight strong{font-size:12px}.highlight small{font-size:10px}.community{min-height:170px}}
+/* AzerothForge – Addon-Karten korrigieren */
+
+.addons .cards {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+.addons .card {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.addons .card-image {
+  height: 210px !important;
+}
+
+.addons .card h3 {
+  font-size: 25px !important;
+}
+
+.addons .card p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+.addons .card-body {
+  padding: 20px !important;
+}
+
+/* Auf Handys untereinander */
+@media (max-width: 760px) {
+  .addons .cards {
+    grid-template-columns: 1fr !important;
+  }
+}
