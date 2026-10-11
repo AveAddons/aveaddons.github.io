@@ -1,24 +1,5 @@
-AZEROTHFORGE – NEUE WEBSEITE
-============================
+AzerothForge Referenzdesign
 
-Dies ist ein vollständig neu geschriebenes Layout, das sich am ausgewählten
-AzerothForge-Design mit dunklem Blau, Gold, Fraktionsmotiv, Addon-Karten
-und schmalem Discord-Banner orientiert.
+Alle Dateien und den gesamten Ordner assets/ ins Root-Verzeichnis des GitHub Pages Repositories AveAddons/aveaddons.github.io hochladen. Bestehende Dateien ersetzen. Die GitHub-Releases im separaten Repository AveAddons/addons bleiben unverändert.
 
-INSTALLATION (GitHub Pages)
-1. ZIP auf dem Handy entpacken.
-2. GitHub-Repository https://github.com/AveAddons/aveaddons.github.io öffnen.
-3. index.html, styles.css, app.js und config.js im HAUPTVERZEICHNIS ersetzen.
-4. Den kompletten Inhalt des Ordners assets/ unter assets/ hochladen.
-5. Änderungen committen und GitHub Pages neu laden.
-
-WICHTIG: Keine zweite Unterordnerebene wie AzerothForge-NEU/index.html erzeugen.
-Die Website wird weiter unter https://aveaddons.github.io/ angezeigt,
-solange das GitHub-Pages-Repository nicht umbenannt wird.
-
-Discord: config.js öffnen und discordUrl auf den eigenen Einladungslink setzen.
-Addon-Daten: Öffentliche Releases aus https://github.com/AveAddons/addons/releases
-Bilder: assets/addons/chronicle.png und foreverjourneyxp.png
-
-Die im ursprünglichen Entwurfsbild gezeigten Beispiel-Addons und fiktiven
-Downloadzahlen werden bewusst NICHT vorgetäuscht. Es erscheinen nur echte Releases.
+Hinweis: Die Vorlage ist ein Design-Mockup; das Layout wird mit den vorhandenen echten Fantasy-Hintergrundbildern nachgebildet. Es werden keine erfundenen Downloadzahlen, Bewertungen oder Beispiel-Addons angezeigt. Discord-Link bei Bedarf in config.js eintragen.
