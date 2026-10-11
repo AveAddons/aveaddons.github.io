@@ -1,13 +1,24 @@
-AZEROTHFORGE WEBSITE – INSTALLATION
+AZEROTHFORGE – NEUE WEBSEITE
+============================
 
-1. ZIP entpacken.
-2. Alle Dateien und den Ordner assets/ in das bestehende GitHub-Pages-Repository AveAddons/aveaddons.github.io hochladen. Vorhandene index.html, styles.css, app.js und config.js ersetzen.
-3. In config.js optional discordUrl auf deinen echten Discord-Einladungslink setzen.
-4. Die vorhandenen Addon-Banner in assets/addons/ ablegen, z. B. chronicle.png und foreverjourneyxp.png.
-5. Die Seite unter https://aveaddons.github.io/ aufrufen. GitHub Pages kann einige Minuten zum Aktualisieren benötigen.
+Dies ist ein vollständig neu geschriebenes Layout, das sich am ausgewählten
+AzerothForge-Design mit dunklem Blau, Gold, Fraktionsmotiv, Addon-Karten
+und schmalem Discord-Banner orientiert.
 
-WICHTIG: Der Repository-Name und die öffentliche URL bleiben unverändert, bis du GitHub Pages und ggf. den Repository-Namen selbst umstellst. Die Webseite zeigt den neuen Namen AzerothForge.
+INSTALLATION (GitHub Pages)
+1. ZIP auf dem Handy entpacken.
+2. GitHub-Repository https://github.com/AveAddons/aveaddons.github.io öffnen.
+3. index.html, styles.css, app.js und config.js im HAUPTVERZEICHNIS ersetzen.
+4. Den kompletten Inhalt des Ordners assets/ unter assets/ hochladen.
+5. Änderungen committen und GitHub Pages neu laden.
 
-GitHub-Releases werden automatisch aus AveAddons/addons eingelesen. Drafts und Prereleases werden nicht angezeigt. Download-Buttons verlinken nur auf angehängte ZIP-Assets.
+WICHTIG: Keine zweite Unterordnerebene wie AzerothForge-NEU/index.html erzeugen.
+Die Website wird weiter unter https://aveaddons.github.io/ angezeigt,
+solange das GitHub-Pages-Repository nicht umbenannt wird.
 
-Das Design ist eine Web-Umsetzung der Vorschau, keine pixelgenaue Rekonstruktion. Die Bildvorschau design-preview.png dient nur als Referenz.
+Discord: config.js öffnen und discordUrl auf den eigenen Einladungslink setzen.
+Addon-Daten: Öffentliche Releases aus https://github.com/AveAddons/addons/releases
+Bilder: assets/addons/chronicle.png und foreverjourneyxp.png
+
+Die im ursprünglichen Entwurfsbild gezeigten Beispiel-Addons und fiktiven
+Downloadzahlen werden bewusst NICHT vorgetäuscht. Es erscheinen nur echte Releases.
