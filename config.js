@@ -1,5 +1,5 @@
-window.AVE_CONFIG = {
+window.AZEROTH_CONFIG = {
   githubOwner: 'AveAddons',
   addonsRepo: 'addons',
-  discordUrl: '' // Hier später euren Discord-Einladungslink eintragen
+  discordUrl: '' // Hier später den Discord-Einladungslink eintragen
 };
