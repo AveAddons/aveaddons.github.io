@@ -1,19 +1,19 @@
-# AveAddons – Website v2
+# AzerothForge Website
 
-Website für World of Warcraft Forever. Statisches Hosting über GitHub Pages.
+Statische GitHub-Pages-Website für `AveAddons/addons` Releases.
 
-## Upload auf GitHub (wichtig)
+## Auf GitHub Pages veröffentlichen
+1. Die Dateien und den Ordner `assets` in den Stamm des Repositories `AveAddons/aveaddons.github.io` hochladen. **Nicht** den äußeren ZIP-Ordner hochladen.
+2. Vorhandene Dateien `index.html`, `styles.css`, `app.js`, `config.js` ersetzen.
+3. Die bestehende `docs.html` im Repository behalten, falls du sie weiterhin nutzen möchtest.
+4. Unter `https://aveaddons.github.io/` prüfen. GitHub Pages braucht manchmal wenige Minuten.
 
-Alle Dateien **aus dem ZIP direkt in das Hauptverzeichnis** von `AveAddons/aveaddons.github.io` hochladen (nicht den übergeordneten Ordner). Vorhandene Dateien überschreiben. Die Ordnerstruktur `assets/aveaddons-logo.png` muss erhalten bleiben.
+Die beiden Beispielbanner liegen unter `assets/addons/`. Du kannst sie später mit deinen eigenen Dateien `chronicle.png` und `foreverjourneyxp.png` überschreiben.
 
-Benötigte Dateien: `index.html`, `docs.html`, `styles.css`, `app.js`, `config.js`, `README.md`, `assets/aveaddons-logo.png`.
+## Discord
+In `config.js` den Wert `discordUrl` auf deinen Einladungslink setzen. Solange leer, führt Discord zur Support-Sektion.
 
-## Automatische Addons
+## Releases
+Es werden veröffentlichte, nicht als Pre-Release markierte GitHub-Releases automatisch angezeigt. Der Download-Button nutzt die erste ZIP-Datei in den Release-Assets.
 
-In `config.js` stehen Organisation `AveAddons` und Repository `addons`. Erst ein **öffentliches** Repository `AveAddons/addons` anlegen. Danach für jedes Addon ein GitHub Release mit Tag `AddonName-v1.2.3` erstellen und eine ZIP-Datei als Release Asset anhängen. Die Website liest Releases beim Aufruf über die öffentliche GitHub-API. Ohne Releases werden Demo-Karten angezeigt.
-
-Discord-Link in `config.js` ergänzen.
-
-## Hinweis
-
-Dies ist eine eigenständige Community-Seite, kein offizielles Blizzard-Angebot. Alle Beispieldaten sind Platzhalter.
+Die öffentliche Website heißt AzerothForge. GitHub-Organisation und bestehende Repository-URLs bleiben unverändert.
