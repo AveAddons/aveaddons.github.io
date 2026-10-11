@@ -80,3 +80,26 @@ body.light-mode{--muted:#c6d2de;filter:brightness(1.14)}
 @media(max-width:1000px){.wrap{width:calc(100% - 38px)}.nav{gap:12px}.nav nav{gap:14px}.brand{font-size:18px}.search input{width:110px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card-image{height:145px}.highlight{gap:8px;padding:5px 8px}.highlight strong{font-size:12px}}
 @media(max-width:760px){.nav{height:62px;flex-wrap:wrap}.menu{display:block;background:none;border:0;color:var(--gold);font-size:25px;order:3;cursor:pointer}.nav nav{display:none;position:absolute;left:0;right:0;top:62px;height:auto;padding:10px 20px 20px;background:#04111e;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #73572b}.nav nav.open{display:flex}.nav nav a{padding:11px}.navtools{margin-left:auto;gap:6px}.search input{width:95px}.discord-icon{display:none}.theme-toggle{font-size:21px}.hero{min-height:420px;background-position:center}.hero-overlay{background:linear-gradient(90deg,#03111e99,#03111eb8 50%,#03111e99),linear-gradient(0deg,#03111e,transparent 25%)}.hero-inner{padding:50px 0}.hero h1{white-space:normal;font-size:clamp(32px,7.5vw,52px)}.highlights{grid-template-columns:repeat(2,1fr);gap:12px 0}.highlight:nth-child(2){border-right:0}.section-top{flex-direction:column;align-items:center}.all-link{position:static;margin-top:12px}.card-image{height:150px}.footer-inner{flex-wrap:wrap;justify-content:center;text-align:center}.footer-note{text-align:center}}
 @media(max-width:520px){.brand{font-size:16px;gap:7px}.monogram{font-size:33px;letter-spacing:-6px}.search{padding:6px 9px}.search input{width:72px;font-size:11px}.hero{min-height:420px}.hero h1{font-size:clamp(31px,8.2vw,43px)}.hero-sub{font-size:21px}.hero-desc{font-size:12px}.hero-actions{gap:8px}.button{font-size:12px;padding:10px 12px}.highlights{padding:16px 0}.highlight{justify-content:flex-start;padding:7px 4px;gap:8px}.highlight strong{font-size:11px}.highlight small{font-size:10px}.hi-icon{font-size:24px}.cards{grid-template-columns:1fr}.card-image{height:180px}.community{min-height:170px}.community h2{font-size:24px}.footer-links{gap:12px;flex-wrap:wrap;justify-content:center}}
+
+/* Alle Änderungen zusammengeführt: Referenz-Layout, ohne zusätzliche Stern-Kachel */
+.highlights::after{background:transparent!important;box-shadow:none!important;text-shadow:0 0 5px #03111e,0 0 9px #03111e;bottom:-17px}
+.hero{background-image:url('assets/hero-v2.jpg');background-position:center 50%;}
+.community{background-image:url('assets/community-v2.jpg')}
+/* Bei zwei echten Releases: gleich große, mittig platzierte Karten statt linksbündiger Lücke */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;justify-content:center}
+.cards:has(> .card:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,370px))}
+.cards:has(> .card:only-child){grid-template-columns:minmax(0,370px)}
+.card-image{height:132px}
+.card-body{min-height:192px}
+.card p{min-height:48px}
+/* Kompakte Abstände, damit Community-Banner und Footer wie im Referenzbild folgen */
+.addons{padding-top:23px;padding-bottom:23px}
+.status{margin:12px 0 9px}
+.community{min-height:164px}
+/* Reale Navigationselemente */
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.discord-icon{font-family:Arial,sans-serif;font-weight:900;font-size:17px}
+body.light-mode{filter:none;background:#102235;color:#fff}
+body.light-mode .header{background:#14283af7}
+@media(max-width:900px){.cards,.cards:has(> .card:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}.cards:has(> .card:only-child){grid-template-columns:minmax(0,370px)}}
+@media(max-width:520px){.cards,.cards:has(> .card:nth-child(2):last-child),.cards:has(> .card:only-child){grid-template-columns:1fr}.card-image{height:185px}.card-body{min-height:0}.hero h1{font-size:clamp(29px,8vw,43px)}}
