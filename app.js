@@ -6,7 +6,12 @@ const images={chronicle:'assets/addons/chronicle.png',foreverjourneyxp:'assets/a
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clean=s=>String(s||'').replace(/!\[[^\]]*\]\([^)]*\)/g,'').replace(/\[[^\]]+\]\([^)]*\)/g,'').replace(/[#*`>_]/g,'').replace(/\s+/g,' ').trim();
 let addons=[];
-function normalized(name){return name.toLowerCase().replace(/[^a-z0-9]/g,'');}
+function normalized(name){
+  const key=String(name||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  if(key.startsWith('chronicle'))return 'chronicleforever';
+  if(key.startsWith('foreverjourneyxp'))return 'foreverjourneyxp';
+  return key;
+}
 function getImage(name){const key=normalized(name);return images[key]||(key.startsWith('chronicle')?images.chronicle:key.startsWith('foreverjourneyxp')?images.foreverjourneyxp:'');}
 function parseRelease(r){
  const tag=r.tag_name||'';const title=r.name||tag;
